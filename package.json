@@ -1,0 +1,43 @@
+{
+  "author": "Almog Melamed <radagaisus@gmail.com> (http://github.com/radagaisus/)",
+  "name": "prepared-response",
+  "version": "0.0.1",
+  "description": "ExpressJS middleware for prepared responses",
+  "keywords": ["middleware", "express", "expressjs", "response", "prepared response"],
+  "homepage": "https://github.com/radagaisus/prepared-response/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/radagaisus/prepared-response.git"
+  },
+  "contributors": [
+    {
+      "name": "Almog Melamed",
+      "email": "radagaisus@gmail.com",
+      "web": "http://github.com/radagaisus/"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "bugs": {
+    "url": "http://github.com/radagaisus/prepared-response/issues/"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "dependencies": {
+    "underscore": "latest"
+  },
+  "devDependencies": {
+    "coffee-script": "latest",
+    "mocha": "latest"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec --ui bdd --require coffee-script --colors --compilers coffee:coffee-script/register test/*"
+  },
+  "bin": {}
+}
