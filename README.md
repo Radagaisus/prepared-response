@@ -44,11 +44,14 @@ npm install prepared-response
 #
 module.exports = prepared_response = (req, res, next) ->
 	# @private. The prepared response.
-	res._prepared_response = {}
+	_prepared_response = {}
 	# Adds prepared `data` to the `_prepared_response`.
 	# @param data - {Object} data to be added to the prepared response
 	res.prepare = (data = {}) ->
-		_.extend _prepared_repsonse, data
+		_.extend _prepared_response, data
 	# `prepared` will return the prepared response
-	req.__defineGetter__ 'prepared', -> req._prepared_response
+	res.__defineGetter__ 'prepared', -> _prepared_response
+	# Move on to the next middleware
+	next()
+
 ```
