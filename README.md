@@ -4,7 +4,7 @@ The `prepared_response` middleware adds a few utility functions that make it
 easier to prepate data, over the course of several middlewares, to be used in
 JSON responses.
 
-Tested with ExpressJS 3.x
+Tested with ExpressJS `3.x`.
 
 ```
 npm install prepared-response
