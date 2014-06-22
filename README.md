@@ -19,7 +19,7 @@ npm install prepared-response
 # Prepared Response
 # -----------------------------------------------------------------------------------
 # The `prepared_response` middleware adds a few utility functions that make it
-# easier to prepate data, over the course of several middlewares, to be used in
+# easier to prepare data, over the course of several middlewares, to be used in
 # JSON responses.
 # 
 # - `res.prepare(data = {})` - Receives data and adds it to the prepared response.
